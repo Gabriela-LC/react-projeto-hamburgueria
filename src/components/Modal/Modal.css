@@ -1,0 +1,44 @@
+
+.containerModal{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0, .3);
+    z-index: 1001;
+
+}
+
+.modalBox{
+    width: 70%;
+    padding: 3rem;
+    background: white;
+    position: relative;
+    border-radius: 8px;
+    border: 4px solid #27AE60;
+    text-align: center;
+
+}
+
+.closeButton{
+    position: absolute;
+    font-size: 20px;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.closeButton:hover{
+    color: #27AE60;
+}
+
+@media(min-width: 800px){
+
+    .modalBox{
+        width: 560px;
+    }
+}
